@@ -1,0 +1,41 @@
+{
+  // Disable syntax highlighting and tokenization by forcing plain text
+  "files.associations": {
+    "*.log": "plaintext",
+    "*.txt": "plaintext",
+    "large-file.*": "plaintext"
+  },
+
+  // Disable performance-heavy editor features
+  /*"editor.minimap.enabled": false,
+  "editor.folding": false,
+  "editor.renderWhitespace": "none",
+  "editor.wordWrap": "off",
+  "editor.formatOnSave": false,
+  "editor.formatOnType": false,
+  "editor.codeLens": false,
+  "editor.quickSuggestions": false,
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.hover.enabled": false,*/
+
+  // Disable breadcrumbs and overview ruler
+  "breadcrumbs.enabled": false,
+  "editor.overviewRulerBorder": false,
+
+  // Disable file watchers for performance
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/.git/**": true,
+    "**/large-file.*": true
+  },
+
+  // Increase memory limit for large files if needed
+  "files.maxMemoryForLargeFilesMB": 4096,
+
+  // Disable Git features
+  "git.enabled": false,
+
+  // Disable all extensions (optional, for extreme cases)
+  "extensions.autoUpdate": false,
+  "extensions.ignoreRecommendations": true
+}
